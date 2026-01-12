@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/Account-token\/gerar-token[1:8]","start":1768232196615,"end":1768232199699,"title":"features\/Account-token\/gerar-token[1:8] 12:36:36.615-12:36:39.699 Gerar Token com sucesso"},{"id":2,"group":1,"content":"features\/Account-token\/gerar-token[2.1:31]","start":1768232199706,"end":1768232202062,"title":"features\/Account-token\/gerar-token[2.1:31] 12:36:39.706-12:36:42.062 Falha na geração do token por - Senha Incorreta"},{"id":3,"group":1,"content":"features\/Account-user\/cadastrar-usuario[1:7]","start":1768232202641,"end":1768232203759,"title":"features\/Account-user\/cadastrar-usuario[1:7] 12:36:42.641-12:36:43.759 criar usuário com sucesso"},{"id":4,"group":1,"content":"features\/Account-user\/cadastrar-usuario[2.1:26]","start":1768232203764,"end":1768232204344,"title":"features\/Account-user\/cadastrar-usuario[2.1:26] 12:36:43.764-12:36:44.344 falha por senha fraca \/ Usuário vazio"},{"id":5,"group":1,"content":"features\/Account-user\/cadastrar-usuario[2.2:27]","start":1768232204348,"end":1768232204934,"title":"features\/Account-user\/cadastrar-usuario[2.2:27] 12:36:44.348-12:36:44.934 falha por senha fraca \/ Usuário vazio"},{"id":6,"group":1,"content":"features\/Account-user\/deletar-usuario[1:8]","start":1768232205046,"end":1768232208830,"title":"features\/Account-user\/deletar-usuario[1:8] 12:36:45.046-12:36:48.830 Deletar usuário com sucesso"},{"id":7,"group":1,"content":"features\/Account-user\/deletar-usuario[2.1:27]","start":1768232208834,"end":1768232211745,"title":"features\/Account-user\/deletar-usuario[2.1:27] 12:36:48.834-12:36:51.745 Falha na deleção de usuário - Sem Token"},{"id":8,"group":1,"content":"features\/Account-user\/deletar-usuario[2.2:28]","start":1768232211749,"end":1768232215297,"title":"features\/Account-user\/deletar-usuario[2.2:28] 12:36:51.749-12:36:55.297 Falha na deleção de usuário - Token Inválido"},{"id":9,"group":1,"content":"features\/Account-user\/deletar-usuario[2.3:29]","start":1768232215300,"end":1768232218323,"title":"features\/Account-user\/deletar-usuario[2.3:29] 12:36:55.300-12:36:58.323 Falha na deleção de usuário - ID Inexistente"},{"id":10,"group":1,"content":"features\/BookStore\/add-livro-usuario[1:11]","start":1768232218539,"end":1768232222105,"title":"features\/BookStore\/add-livro-usuario[1:11] 12:36:58.539-12:37:02.105 Adicionar livro com sucesso"},{"id":11,"group":1,"content":"features\/BookStore\/add-livro-usuario[2.1:32]","start":1768232222108,"end":1768232222742,"title":"features\/BookStore\/add-livro-usuario[2.1:32] 12:37:02.108-12:37:02.742 Falha ao adicionar livro - Sem Autorização"},{"id":12,"group":1,"content":"features\/BookStore\/add-livro-usuario[2.2:33]","start":1768232222745,"end":1768232223388,"title":"features\/BookStore\/add-livro-usuario[2.2:33] 12:37:02.745-12:37:03.388 Falha ao adicionar livro - Token Inválido"},{"id":13,"group":1,"content":"features\/BookStore\/atualizar-isbn[1:13]","start":1768232223540,"end":1768232229276,"title":"features\/BookStore\/atualizar-isbn[1:13] 12:37:03.540-12:37:09.276 Atualizar isbn com sucesso"},{"id":14,"group":1,"content":"features\/BookStore\/atualizar-isbn[2.1:34]","start":1768232229278,"end":1768232229842,"title":"features\/BookStore\/atualizar-isbn[2.1:34] 12:37:09.278-12:37:09.842 Falha ao substituir livro na coleção - Sem Autorização"},{"id":15,"group":1,"content":"features\/BookStore\/atualizar-isbn[2.2:35]","start":1768232229845,"end":1768232230403,"title":"features\/BookStore\/atualizar-isbn[2.2:35] 12:37:09.845-12:37:10.403 Falha ao substituir livro na coleção - Token Inválido"},{"id":16,"group":1,"content":"features\/BookStore\/atualizar-isbn[2.3:36]","start":1768232230405,"end":1768232230971,"title":"features\/BookStore\/atualizar-isbn[2.3:36] 12:37:10.405-12:37:10.971 Falha ao substituir livro na coleção - ISBN Novo Inválido"},{"id":17,"group":1,"content":"features\/BookStore\/atualizar-isbn[2.4:37]","start":1768232230974,"end":1768232231553,"title":"features\/BookStore\/atualizar-isbn[2.4:37] 12:37:10.974-12:37:11.553 Falha ao substituir livro na coleção - Livro Inexistente"},{"id":18,"group":1,"content":"features\/BookStore\/buscar-livro-isbn[1:10]","start":1768232231712,"end":1768232232867,"title":"features\/BookStore\/buscar-livro-isbn[1:10] 12:37:11.712-12:37:12.867 Buscar livro por ISBN com sucesso"},{"id":19,"group":1,"content":"features\/BookStore\/buscar-livro-isbn[2.1:30]","start":1768232232870,"end":1768232233987,"title":"features\/BookStore\/buscar-livro-isbn[2.1:30] 12:37:12.870-12:37:13.987 Falha ao buscar livro - ISBN Inexistente"},{"id":20,"group":1,"content":"features\/BookStore\/buscar-livro-isbn[2.2:31]","start":1768232233990,"end":1768232235113,"title":"features\/BookStore\/buscar-livro-isbn[2.2:31] 12:37:13.990-12:37:15.113 Falha ao buscar livro - ISBN Formato Errado"},{"id":21,"group":1,"content":"features\/BookStore\/listar-catalogo[1:8]","start":1768232235200,"end":1768232235743,"title":"features\/BookStore\/listar-catalogo[1:8] 12:37:15.200-12:37:15.743 Listar livros com sucesso"},{"id":22,"group":1,"content":"features\/BookStore\/listar-catalogo[2:34]","start":1768232235746,"end":1768232236295,"title":"features\/BookStore\/listar-catalogo[2:34] 12:37:15.746-12:37:16.295 Validar que a rota de catálogo não aceita deleção"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
