@@ -4,7 +4,7 @@
 Criar uma suíte de testes automatizados para a API BookStore usando Karate DSL, cobrindo endpoints Account (para gerar token) e BookStore (GET, POST, DELETE, PUT), com cenários de sucesso e falha. 
 
 2 - Tecnologia usadas -
-Karate DSL , Java, Maven, JUnit
+Karate DSL , Java, Maven, JUnit, JS
 
 3 - Pré-requisitos -
 Instalar o JDK (Java Development Kit); configurar as variáveis de ambiente (JAVA_HOME); E de uma IDE (VSCODE ou INTELLIJ) com os pluggins de Cucumber/karate instalados;
