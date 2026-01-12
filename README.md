@@ -28,8 +28,8 @@ Com isso, consegui usar tudo e mais um pouco do que estou aprendendo durante a a
 
 7 - Dicas -
 Durante o desenvolvimento do desafio, a api chegou a passar por instabilidades. Felizmente, a api do swegger que estamos utilizando possui outra url que podemos alterar para usar.
-- Fiz usando essa ↓
+- Fiz usando essa →
 "https://bookstore.demoqa.com/"
-- Alternativa caso a api de cima tenha caído ↓
+- Alternativa caso a api de cima tenha caído →
 "https://bookstore.toolsqa.com/"
 copie a url e substitua no arquivo "Karate-config.js", mais especificamente na linha 5.
